@@ -1,1 +1,26 @@
-/* CSS */
+:root {
+  /* Primaire kleuren */
+  --oranje: rgb(234, 91, 12); /* Toren Oranje */
+  --donkerblauw: rgb(51, 52, 103); /* Paars blauw */ 
+  --groen: rgb(142, 163, 75); /* Mos groen */
+  --zeegroen: rgb(8, 91, 100); /* Zee */
+  --grijsbruin: rgb(105, 96, 79); /* Modder */
+  --lichtblauw: rgb(180, 189, 208); /*Lucht blauw */
+
+  /* Secundaire kleuren */
+  --donkergroen: rgb(41, 89, 63); /* Bos */
+  --gras: rgb(106, 164, 38); /* Gras */
+  --roze: rgb(249, 193, 157); /* Kauwgom */
+  --grijs: rgb(188, 181, 172); /* Steen */
+
+  --wit: #ffffff;  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+  background: var(--donkerblauw);
+}
