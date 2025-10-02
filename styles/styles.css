@@ -5,7 +5,7 @@
   --groen: rgb(142, 163, 75); /* Mos groen */
   --zeegroen: rgb(8, 91, 100); /* Zee */
   --grijsbruin: rgb(105, 96, 79); /* Modder */
-  --lichtblauw: rgb(180, 189, 208); /*Lucht blauw */
+  --lichtblauw: rgb(180, 189, 208); /* Lucht blauw */
 
   /* Secundaire kleuren */
   --donkergroen: rgb(41, 89, 63); /* Bos */
@@ -19,28 +19,29 @@
 }
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
+/* ======== HEADER ======== */
 header {
   position: sticky;
   top: 0;
-  padding: 8px;
-
-  background-color: white;
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
 
-  /* box-shadow: 0 20px 10px -10px gray; */
+  padding: 8px 24px;
+
   border-bottom: solid black 1px;
+  background-color: white;
 }
 
 header img {
+  width: auto;
   height: 4em;
-  width: 10.2em;
 }
 
 header nav {
@@ -48,22 +49,22 @@ header nav {
 }
 
 header nav ul {
+  display: flex;
+  /* justify-content: center; */
+  gap: 16px;
+
   margin: 0;
   padding: 0;
-  list-style: none;
-
   padding-left: 16px;
 
-  /* justify-content: center; */
-
-  display: flex;
-  gap: 2px;
+  list-style: none;
 }
 
 header nav li {
   flex-grow: 1;
   min-width: 5em;
   max-width: 9em;
+
   border-radius: 10px;
 }
 
@@ -71,9 +72,9 @@ header nav a {
   display: block;
   text-align: center;
 
+  line-height: 4em;
   text-decoration: none;
   color: white;
 
-  line-height: 4em;
   background: var(--donkerblauw);
 }
