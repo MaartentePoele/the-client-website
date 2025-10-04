@@ -70,16 +70,34 @@ figcaption {
   font-family: Arial;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
 main {
   padding: 0 15% 0 15%;
 
-  @media (min-width: 1000px) {
+  /* @media (min-width: 1000px) {
     text-align: justify;
-  }
+  } */
+}
+
+img {
+  max-width: 100%;
 }
 
 #bq-oranje {
+  width: 100%;
+  max-width: 375px;
+  padding: 0.5em;
+  border-radius: 10em;
+
+  text-align: center;
   background-color: var(--oranje);
+
+  margin: auto;
 }
 
 #bq-zeegroen {
@@ -94,16 +112,6 @@ main {
 #img-groot {
   max-width: 1000px;
   margin: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.4;
 }
 
 /* ======== HEADER ======== */
@@ -148,10 +156,9 @@ header {
           display: block;
           text-align: center;
 
+          font-size: 1.5em;
           text-decoration: none;
           color: var(--donkerblauw);
-
-          font-size: 1.5em;
         }
 
         a:hover {
