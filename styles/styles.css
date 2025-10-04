@@ -16,26 +16,30 @@
   --grijs: rgb(188, 181, 172); /* Steen */
 }
 
-/* ======== TEKSTGROOTTES ======== */
+/* ======== OPMAAK TEKST ======== */
 
 /* Kop (verticale tekst) */
 span {
   font-size: 3.5em;
+  color: var(--donkerblauw);
 }
 
 /* EERSTE Subkop ('kop' per pagina) */
 h1 {
   font-size: 2.25em;
+  color: var(--donkerblauw);
 }
 
 /* ANDERE Subkoppen ('kop per pagina') */
 h2 {
   font-size: 2.25em;
+  color: var(--donkerblauw);
 }
 
 /* Gekleurd blok met quote */
 blockquote {
   font-size: 2em;
+  color: white;
 }
 
 /* Intro (dikgedrukt onder subkop) */
@@ -68,7 +72,18 @@ figcaption {
 
 main {
   padding: 0 15% 0 15%;
-  text-align: justify;
+
+  @media (min-width: 1000px) {
+    text-align: justify;
+  }
+}
+
+#bq-oranje {
+  background-color: var(--oranje);
+}
+
+#bq-zeegroen {
+  background-color: var(--zeegroen);
 }
 
 #img-klein {
@@ -117,34 +132,34 @@ header {
 
     ul {
       display: flex;
-      /* justify-content: center; */
       flex-wrap: wrap;
-      gap: 16px;
+      gap: 20px;
 
       margin: 0;
       padding: 0;
       padding-left: 16px;
 
       list-style: none;
-    }
 
-    li {
-      flex-grow: 1;
-      min-width: 5em;
-      max-width: 9em;
+      li {
+        flex-grow: 1;
 
-      border-radius: 10px;
-    }
+        a {
+          display: block;
+          text-align: center;
 
-    a {
-      display: block;
-      text-align: center;
+          text-decoration: none;
+          color: var(--donkerblauw);
 
-      line-height: 4em;
-      text-decoration: none;
-      color: white;
+          font-size: 1.5em;
+        }
 
-      background: var(--donkerblauw);
+        a:hover {
+          color: #551a8b;
+          text-decoration: underline;
+          text-underline-offset: 0.25em;
+        }
+      }
     }
   }
 }
