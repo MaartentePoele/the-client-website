@@ -16,46 +16,47 @@
   --grijs: rgb(188, 181, 172); /* Steen */
 }
 
-/* ======== LETTERGROOTTES ======== */
+/* ======== TEKSTGROOTTES ======== */
 
 /* Kop (verticale tekst) */
 span {
-  font-size: 56px;
+  font-size: 3.5em;
 }
 
 /* EERSTE Subkop ('kop' per pagina) */
 h1 {
-  font-size: 36px;
+  font-size: 2.25em;
 }
 
-/* ANDERE Subkoppen ('kop per pagina) */
+/* ANDERE Subkoppen ('kop per pagina') */
 h2 {
-  font-size: 36px;
+  font-size: 2.25em;
 }
 
 /* Gekleurd blok met quote */
 blockquote {
-  font-size: 32px;
+  font-size: 2em;
 }
 
 /* Intro (dikgedrukt onder subkop) */
 h3 {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 /* Headers met dezelfde grootte als inhoud artikelen */
 h4 {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 /* Inhoud artikelen */
 p {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 /* Tekst onder afbeelding */
 figcaption {
-  font-size: 16px;
+  font-size: 1em;
+  color: var(--oranje);
 }
 
 /* ======== ALGEMEEN ======== */
@@ -66,7 +67,8 @@ figcaption {
 }
 
 main {
-  padding: 10%;
+  padding: 0 15% 0 15%;
+  text-align: justify;
 }
 
 #img-klein {
