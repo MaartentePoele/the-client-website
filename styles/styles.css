@@ -1,3 +1,5 @@
+/* ======== KLEUREN ======== */
+
 :root {
   /* Primaire kleuren */
   --oranje: rgb(234, 91, 12); /* Toren Oranje */
@@ -14,8 +16,71 @@
   --grijs: rgb(188, 181, 172); /* Steen */
 }
 
+/* ======== LETTERGROOTTES ======== */
+
+/* Kop (verticale tekst) */
+span {
+  font-size: 56px;
+}
+
+/* EERSTE Subkop ('kop' per pagina) */
+h1 {
+  font-size: 36px;
+}
+
+/* ANDERE Subkoppen ('kop per pagina) */
+h2 {
+  font-size: 36px;
+}
+
+/* Gekleurd blok met quote */
+blockquote {
+  font-size: 32px;
+}
+
+/* Intro (dikgedrukt onder subkop) */
+h3 {
+  font-size: 24px;
+}
+
+/* Headers met dezelfde grootte als inhoud artikelen */
+h4 {
+  font-size: 20px;
+}
+
+/* Inhoud artikelen */
+p {
+  font-size: 20px;
+}
+
+/* Tekst onder afbeelding */
+figcaption {
+  font-size: 16px;
+}
+
+/* ======== ALGEMEEN ======== */
+
 * {
   box-sizing: border-box;
+  font-family: Arial;
+}
+
+main {
+  padding: 10%;
+}
+
+#img-klein {
+  max-width: 500px;
+  margin: 0;
+}
+
+#img-groot {
+  max-width: 1000px;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 body {
@@ -25,6 +90,7 @@ body {
 }
 
 /* ======== HEADER ======== */
+
 header {
   position: sticky;
   top: 0;
