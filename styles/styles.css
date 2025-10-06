@@ -94,7 +94,36 @@ header {
 }
 
 main {
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media (min-width: 0px) {
+    padding-top: 410px;
+  }
+
+  @media (min-width: 201.6px) {
+    padding-top: 376.4px;
+  }
+  @media (min-width: 234.4px) {
+    padding-top: 322.8px;
+  }
+
+  @media (min-width: 270.4px) {
+    padding-top: 269.2px;
+  }
+
+  @media (min-width: 382.4px) {
+    padding-top: 215.6px;
+  }
+
+  @media (min-width: 602.4px) {
+    padding-top: 162px;
+  }
+
+  @media (min-width: 931.2px) {
+    padding-top: 128.4px;
+  }
+
   max-width: 750px;
   margin: auto;
 }
