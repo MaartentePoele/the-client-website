@@ -1,6 +1,6 @@
 /* ======== KLEUREN ======== */
 
-:root {
+html {
   /* Primaire kleuren */
   --oranje: rgb(234, 91, 12); /* Toren Oranje */
   --donkerblauw: rgb(51, 52, 103); /* Paars blauw */
@@ -16,56 +16,9 @@
   --grijs: rgb(188, 181, 172); /* Steen */
 }
 
-/* ======== OPMAAK TEKST ======== */
-
-/* Kop (verticale tekst) */
-span {
-  font-size: 3.5em;
-  color: var(--donkerblauw);
-}
-
-/* EERSTE Subkop ('kop' per pagina) */
-h1 {
-  font-size: 2.25em;
-  color: var(--donkerblauw);
-}
-
-/* ANDERE Subkoppen ('kop per pagina') */
-h2 {
-  font-size: 2.25em;
-  color: var(--donkerblauw);
-}
-
-/* Gekleurd blok met quote */
-blockquote {
-  font-size: 2em;
-  color: white;
-}
-
-/* Intro (dikgedrukt onder subkop) */
-h3 {
-  font-size: 1.5em;
-}
-
-/* Headers met dezelfde grootte als inhoud artikelen */
-h4 {
-  font-size: 1.25em;
-}
-
-/* Inhoud artikelen */
-p {
-  font-size: 1.25em;
-}
-
-/* Tekst onder afbeelding */
-figcaption {
-  font-size: 1em;
-  color: var(--oranje);
-}
-
-/* ======== ALGEMEEN ======== */
-
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: Arial;
 }
@@ -74,44 +27,6 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.4;
-}
-
-main {
-  padding: 0 15% 0 15%;
-
-  /* @media (min-width: 1000px) {
-    text-align: justify;
-  } */
-}
-
-img {
-  max-width: 100%;
-}
-
-#bq-oranje {
-  width: 100%;
-  max-width: 375px;
-  padding: 0.5em;
-  border-radius: 10em;
-
-  text-align: center;
-  background-color: var(--oranje);
-
-  margin: auto;
-}
-
-#bq-zeegroen {
-  background-color: var(--zeegroen);
-}
-
-#img-klein {
-  max-width: 500px;
-  margin: 0;
-}
-
-#img-groot {
-  max-width: 1000px;
-  margin: 0;
 }
 
 /* ======== HEADER ======== */
@@ -169,4 +84,89 @@ header {
       }
     }
   }
+}
+
+main {
+  padding: 1rem;
+  max-width: 750px;
+  margin: auto;
+
+  /* @media (min-width: 1000px) {
+    text-align: justify;
+  } */
+}
+
+/* ======== OPMAAK TEKST ======== */
+
+/* Kop (verticale tekst) */
+span {
+  font-size: 3.5rem;
+  color: var(--donkerblauw);
+}
+
+/* EERSTE Subkop en ANDERE Subkoppen ('kop' per pagina) */
+h1,
+h2 {
+  font-size: 2.25rem;
+  color: var(--donkerblauw);
+}
+
+/* Intro (dikgedrukt onder subkop) */
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Headers met dezelfde grootte als inhoud artikelen (p) */
+h4,
+p {
+  font-size: 1.25rem;
+}
+
+/* Gekleurd blok met quote */
+blockquote {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Tekst onder afbeelding */
+figcaption {
+  font-size: 1rem;
+}
+
+/* ======== GENERAL ======== */
+
+img {
+  max-width: 100%;
+}
+
+.img-klein {
+  max-width: 500px;
+  margin: 0;
+}
+
+.img-groot {
+  max-width: 1000px;
+  margin: 0;
+}
+
+.blockquote-oranje {
+  width: 100%;
+  max-width: 375px;
+  padding: 0.5em;
+  border-radius: 10em;
+
+  text-align: center;
+  background-color: var(--oranje);
+
+  margin: auto;
+}
+
+.blockquote-zeegroen {
+  background-color: var(--zeegroen);
+}
+
+/* ======== ALGEMEEN-PAGINA ======== */
+
+.figcaption-p2 {
+  color: var(--oranje);
 }
