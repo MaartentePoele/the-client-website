@@ -42,14 +42,15 @@ header {
   align-items: center;
   justify-content: center;
 
-  padding: 8px 24px;
+  padding: 16px 24px;
 
   border-bottom: solid black 1px;
   background-color: white;
 
   a img {
     width: auto;
-    height: 4em;
+    height: 2em;
+    object-fit: contain;
   }
 
   nav {
@@ -59,6 +60,11 @@ header {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      justify-content: center;
+
+      @media (min-width: 940px) {
+        justify-content: end;
+      }
 
       margin: 0;
       padding: 0;
@@ -67,7 +73,9 @@ header {
       list-style: none;
 
       li {
-        flex-grow: 1;
+        &.active {
+          font-weight: bold;
+        }
 
         a {
           display: block;
@@ -76,12 +84,12 @@ header {
           font-size: 1.5em;
           text-decoration: none;
           color: var(--donkerblauw);
-        }
 
-        a:hover {
-          color: #551a8b;
-          text-decoration: underline;
-          text-underline-offset: 0.25em;
+          &:hover {
+            color: #551a8b;
+            text-decoration: underline;
+            text-underline-offset: 0.25em;
+          }
         }
       }
     }
