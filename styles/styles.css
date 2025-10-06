@@ -32,8 +32,9 @@ body {
 /* ======== HEADER ======== */
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
 
   display: flex;
   flex-wrap: wrap;
@@ -44,6 +45,8 @@ header {
 
   border-bottom: solid black 1px;
   background-color: white;
+
+  transition: transform 0.25s ease-in-out;
 
   a img {
     width: auto;
@@ -59,10 +62,6 @@ header {
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-
-      /* @media (min-width: 940px) {
-        justify-content: end;
-      } */
 
       margin: 0;
       padding: 0;
@@ -138,6 +137,10 @@ figcaption {
 }
 
 /* ======== GENERAL ======== */
+
+.hidden {
+  transform: translateY(-100%);
+}
 
 img {
   max-width: 100%;
