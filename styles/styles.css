@@ -23,6 +23,13 @@ html {
   font-family: Arial;
 }
 
+/* voor de stijling */
+html {
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,10 +39,6 @@ body {
 /* ======== HEADER ======== */
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -45,8 +48,6 @@ header {
 
   border-bottom: solid black 1px;
   background-color: white;
-
-  transition: transform 0.25s ease-in-out;
 
   a img {
     width: auto;
@@ -94,34 +95,12 @@ header {
 }
 
 main {
-  padding-left: 1rem;
-  padding-right: 1rem;
 
-  @media (min-width: 0px) {
-    padding-top: 410px;
-  }
-
-  @media (min-width: 201.6px) {
-    padding-top: 376.4px;
-  }
-  @media (min-width: 234.4px) {
-    padding-top: 322.8px;
-  }
-
-  @media (min-width: 270.4px) {
-    padding-top: 269.2px;
-  }
-
-  @media (min-width: 382.4px) {
-    padding-top: 215.6px;
-  }
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   @media (min-width: 602.4px) {
-    padding-top: 162px;
-  }
-
-  @media (min-width: 931.2px) {
-    padding-top: 128.4px;
+    padding-top: 2rem;
   }
 
   max-width: 750px;
@@ -169,6 +148,20 @@ figcaption {
 
 .hidden {
   transform: translateY(-100%);
+}
+
+svg {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  border-radius: 50%;
+  background: var(--oranje);
+  cursor: pointer;
+  border: none;
+  fill: white;
 }
 
 img {
