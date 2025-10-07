@@ -95,6 +95,8 @@ header {
 }
 
 main {
+  margin: auto;
+  max-width: 64ch;
 
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -102,9 +104,6 @@ main {
   @media (min-width: 602.4px) {
     padding-top: 2rem;
   }
-
-  max-width: 750px;
-  margin: auto;
 }
 
 /* ======== OPMAAK TEKST ======== */
