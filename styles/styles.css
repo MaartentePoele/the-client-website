@@ -130,6 +130,7 @@ h3 {
 h4,
 p {
   font-size: 1.25rem;
+  color: var(--donkerblauw);
 }
 
 /* Gekleurd blok met quote */
