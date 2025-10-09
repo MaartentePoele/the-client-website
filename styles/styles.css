@@ -224,12 +224,12 @@ img {
 
 /* ======== ALGEMEEN-PAGINA ======== */
 
-.figcaption-oranje {
-  color: var(--oranje);
-}
-
 .figcaption-donkerblauw {
   color: var(--donkerblauw);
+}
+
+.figcaption-oranje {
+  color: var(--oranje);
 }
 
 h4 {
